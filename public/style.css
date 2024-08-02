@@ -1,0 +1,159 @@
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+/* DEV ID  */
+.info-icon {
+    position: absolute;
+    top: 92vh;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.info-box {
+    display: none;
+    position: absolute;
+    top: 85vh;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    z-index: 1000;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+.info-box p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+h1, h2 {
+    text-align: center;
+}
+/* DEV ID END  */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin: 0; /* Remove margin to reduce gap */
+    flex: 1 1 150px; /* Adjust flex-basis for better alignment */
+    text-align: right; /* Align labels to the right */
+}
+
+.input-section select,
+.input-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1 1 auto;
+}
+
+.input-section input {
+    max-width: 200px;
+    margin-left: 10px; /* Add margin to the left of inputs for spacing */
+}
+
+.input-section button {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+.input-section button:hover {
+    background-color: #45a049;
+}
+
+.container2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 0;
+    position: relative;
+    right: 19px;
+}
+
+.expenses-list {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tfoot td {
+    font-weight: bold;
+    padding: 12px;
+}
+
+.delete-btn {
+    padding: 8px 16px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e03d3d;
+}

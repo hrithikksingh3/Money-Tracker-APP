@@ -1,0 +1,195 @@
+/* Base styles for smaller screens */
+body {
+    font-size: 14px;
+    /* Adjust base font size for better readability on small screens */
+    margin: 20px 0;
+    /* Remove default margin for better alignment */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* DEV ID  */
+.info-icon {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+}
+
+.info-icon:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    background-color: rgb(123, 123, 123);
+    color: white;
+    
+    
+}
+
+.info-box {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    z-index: 1000;
+}
+
+.info-box a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+.info-box p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* DEV ID END  */
+.container {
+    padding: 15px;
+    /* Reduce padding for smaller screens */
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    /* Ensure container takes full width */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+
+.input-section {
+    flex-direction: column;
+    /* Stack form elements vertically */
+    align-items: stretch;
+    /* Make input fields and button take full width */
+    gap: 10px;
+    /* Add spacing between elements */
+}
+
+.input-section label,
+.input-section input,
+.input-section button {
+    width: 100%;
+    /* Make elements take full width */
+    margin: 8px 0;
+    /* Add vertical spacing */
+}
+
+.input-section input,
+.input-section button {
+    padding: 12px;
+    /* Increase padding for better touch interaction */
+    font-size: 14px;
+    /* Adjust font size for readability */
+}
+
+.expenses-list {
+    margin: 10px;
+    /* Reduce margin for smaller screens */
+}
+
+table {
+    width: 100%;
+    /* Ensure table takes full width */
+    font-size: 12px;
+    /* Reduce font size for better fit */
+    border-collapse: collapse;
+    /* Ensure borders are not doubled */
+}
+
+th,
+td {
+    padding: 8px;
+    /* Adjust padding for better fit */
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.delete-btn {
+    padding: 10px;
+    /* Increase padding for easier clicking */
+    font-size: 14px;
+    /* Adjust font size for readability */
+}
+
+/* Responsive design for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column;
+        gap: 10px;
+        /* Add spacing between stacked elements */
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        /* Ensure container is responsive */
+        max-width: 360px;
+        /* Set max-width for better fit */
+        margin: 50px auto;
+        /* Center the container */
+    }
+
+    .container2 {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        /* Ensure container is responsive */
+        max-width: 360px;
+        /* Set max-width for better fit */
+        margin: 50px auto;
+        /* Center the container */
+        position: relative;
+        left: -1px;
+    }
+
+    .input-section label,
+    .input-section input,
+    .input-section button {
+        width: 100%;
+        margin: 8px 0;
+        /* Adjust vertical spacing */
+    }
+
+    .input-section label {
+        font-weight: bold;
+        margin: 0;
+        flex: 1 1 0px;
+        text-align: left;
+    }
+
+    table {
+        font-size: 10px;
+        /* Reduce font size */
+    }
+
+    th,
+    td {
+        padding: 8px;
+        /* Adjust padding */
+    }
+}

@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# npm package lock file (optional)
+package-lock.json
